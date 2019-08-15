@@ -1,0 +1,9 @@
+/* CSS for layout */
+#nav_title {
+	color: white;
+}
+@media screen and (max-width: 600px) {
+	body {
+	  	background-color: rgb(120, 184, 189);
+	}
+}

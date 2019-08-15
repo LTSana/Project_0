@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+
+{% block title %}
+	CAVE
+{% endblock %}
+
+{% block main %}
+	<!-- GET THE CSS AND JAVASCRIPT FOR THIS PAGE -->
+	<link href="static/page_story_style.css" rel="stylesheet" type="text/css">
+	<script src="static/page_2.js"></script>
+
+	<!-- THE SECRET IS SOMEWHERE HERE -->
+	<div class="text-center" id="story_details">
+		&nbsp;
+		<h3>THE CAVE</h3><br>
+		One explores a cave in the mystical forest of Chill.
+		<br>Inside the cave one finds doors with weird signs.
+		<br>Door #@&$* has a line starting from the left-conner moving right 50cm, then down 50cm, then left 50cm, then down 50cm, then right 50cm again.
+		<br>Door #%*(% has a drawing of an elephant that looks 5 years old and a bigger elephant with 7 birds on it.
+		<br>Door $X_X$ has a number on the door. Look at it <span style="color: red;" onclick="clicked_look()">0_0</span><!-- CLICK ON THE RED EYES TO SHOW IMAGE -->
+		<br>
+		<!-- USED FOR JAVASCRIPT TO DISPLAY IMAGE -->
+		<span id="look_what_it_is"></span>
+	</div>
+{% endblock %}

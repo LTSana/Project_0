@@ -1,0 +1,39 @@
+/* CSS for index */
+#number_pages {
+	color: rgb(0, 255, 0);
+}
+
+#hole {
+	color: black;
+}
+
+#cave {
+	color: brown;
+}
+
+#void {
+	color: gray;
+}
+
+#secret_completed {
+  	left: 30%;
+}
+
+.hyperlink {
+	color: red;
+	background-color: black;
+	border-radius: 10%;
+}
+.game_completed, #detail_secret_code {
+	color: rgb(0, 255, 255);
+}
+
+.btn {
+	width: 20%;
+	color: black;
+	background-color: orange;
+	font-family: monospace;
+	font-size: 150%;
+	position: relative;
+	left: 2%;
+}

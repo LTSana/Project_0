@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+{% extends "layout.html" %}
+
+{% block title %}
+	The Path Of The Future
+{% endblock %}
+
+{% block main %}
+	<!-- GET THE CSS AND JAVASCRIPT FOR THIS PAGE -->
+	<link href="static/index.css" rel="stylesheet" type="text/css">
+	<script src="static/secret_code_page_reveal.js"></script>
+	
+	<!-- DESCRIPTION ON WHAT YOU NEED TO DO -->
+	<div>
+		There are <span id="number_pages">4</span> Pages in this system, they contain hints to find the <span id="detail_secret_code">Secret Code</span>.
+		<br>
+		You'll need a pen and paper *hint*
+	</div>
+
+	<!-- PAGES TO LOOK THROUGH AND FIND THE CODE -->
+	<ol>
+		<li>Mystery of the <span id="hole">HOLE</span>-<a class="hyperlink" href="/page_1">Explore</a></li>
+		<li>Mystery of the <span id="cave">CAVE</span>-<a class="hyperlink" href="/page_2">Explore</a></li>
+		<li>Mystery of the <span id="void">VOID</span>-<a class="hyperlink" href="/page_3">Explore</a></li>
+		<li>Mystery of the ...-<a class="hyperlink" href="/page_4">Explore</a></li>
+	</ol>
+
+	<!-- FORM FOR SECRET CODE -->
+	<form method="GET">
+		<div>
+			<button class="btn" onclick="check_code_given()" type="submit">CHECK</button>
+		</div>
+		<div>
+			<input id="secret_code" style="width: 20%; position: absolute; left: 2%;" type="number" class="form-control number_code" name="secret_code" placeholder="Secret Code" required>
+		</div>
+	</form>
+	<br>
+	<br>
+
+	<!-- SECRET WILL SHOW HERE -->
+	<div class="text-center" id="secret_completed">
+
+	</div>
+{% endblock %}

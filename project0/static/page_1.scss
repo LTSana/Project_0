@@ -1,0 +1,18 @@
+$span: red;
+$font: Helvetica, sans-serif;
+
+body {
+	span {
+		color: $span;
+		font-family: $font;
+	}
+}
+
+%secret_hint {
+	color: aqua;
+}
+
+#secret_hint {
+	@extend %secret_hint;
+	font-family: $font;
+}
