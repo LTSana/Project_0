@@ -14,4 +14,4 @@ You need to be in the directory of the program to run it in Command Prompt.
 Run: "cd " <then the path to the folder of the program>
 
 Example: "cd Documents\project0\"
-*Where 'project0' is the folder where the program is in.
+*Where 'project0' is the folder where the program is in.*
